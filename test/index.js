@@ -8,7 +8,7 @@ client.on('ready', () => {
   const target = new TargetChannel(client, channel)
 
   target.on('join', () => console.log('joined'))
-  target.on('leave', () => console.log('leaved'))
+  target.on('leave', () => console.log('left'))
 
   target.on('first', () => channel.join())
   target.on('empty', () => channel.leave())
